@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Pizza {
+    void prepare();
+    void bake();
+    void cut();
+    void box();
+}
+
+
+class cheseePizza{}
+
+class GreekPizza{}
+
+Pizza <|-- cheseePizza
+Pizza <|-- GreekPizza
+
+class OrderPizza1{}
+class OrderPizza2{}
+class OrderPizza3{}
+
+class SimpleFactory{}
+
+SimpleFactory o.. OrderPizza1
+SimpleFactory o.. OrderPizza2
+SimpleFactory o.. OrderPizza3
+class PizzaStore{}
+
+
+@enduml

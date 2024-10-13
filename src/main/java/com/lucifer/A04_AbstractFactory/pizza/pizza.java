@@ -1,4 +1,4 @@
-package com.lucifer.A03_FactoryMethod.pizza;
+package com.lucifer.A04_AbstractFactory.pizza;
 
 //pizza类是抽象类
 public abstract class pizza {

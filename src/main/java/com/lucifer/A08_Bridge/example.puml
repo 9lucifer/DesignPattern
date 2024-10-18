@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Client{}
+
+interface Brand{
+    +call():void
+}
+
+class xiaomi{}
+
+class vivo{}
+
+xiaomi ..|> Brand
+vivo ..|> Brand
+
+class phone{
+- brand:Brand
+}
+
+class FoldedPhone{}
+class UpBrightPhone{}
+
+FoldedPhone --|> phone
+UpBrightPhone --|> phone
+
+phone --o Brand
+Client ..> phone
+Client ..> Brand
+
+
+@enduml

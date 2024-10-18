@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class AbstractHouse {
+    buildBasic():void
+    buildWalls():void
+    roofed():void
+    build():void
+}
+
+class commonHouse{}
+class HighBUilding{}
+
+commonHouse --|> AbstractHouse
+HighBUilding --|> AbstractHouse
+
+class client{}
+
+client ..> commonHouse
+client ..> HighBUilding
+
+
+@enduml
